@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "npm i -g @angular/cli && ng serve",
+    "start": "npm run build && node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -23,8 +23,15 @@
     "@angular/router": "^4.0.0",
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.25",
     "angular-calendar": "^0.14.0",
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
     "core-js": "^2.4.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "morgan": "^1.8.1",
+    "path": "^0.12.7",
     "rxjs": "^5.1.0",
+    "serve-favicon": "^2.4.2",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
